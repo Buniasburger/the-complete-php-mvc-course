@@ -3,3 +3,4 @@
 vendor
 .env
 node_modules
+resources/bower/vendor
