@@ -8,6 +8,14 @@
     <title>Document</title>
 </head>
 <body>
+    <div style="width: 600px;padding: 15px;margin: 0 auto;background-color: #0a0a0a">
+        email body <?php echo $data; ?>
+
+        <p>
+            Regards<br/><br/>
+            <strong>Acme Store</strong>
+        </p>
+    </div>
 
 </body>
 </html>

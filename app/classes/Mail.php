@@ -37,13 +37,14 @@ class Mail
 
         // sender info
         $this->mail->From = getenv('ADMIN_EMAIL');
-        $this->mail->From = 'ACME STORE';
+        $this->mail->FromName = 'Acme Store';
     }
 
     public function send(array $data)
     {
         $this->mail->addAddress($data['to'], $data['name']);
         $this->mail->Subject = $data['subject'];
-        $this->mail->Body = $data['body'];
+        $this->mail->Body = make($data['view'], ['data' => $data['body']]);
+        return $this->mail->send();
     }
 }
