@@ -3,7 +3,6 @@
 namespace App;
 
 use AltoRouter;
-use App\Controllers\IndexController;
 
 class RouteDispatcher
 {
